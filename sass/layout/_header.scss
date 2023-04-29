@@ -3,7 +3,7 @@
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
+      rgba($color-primary-light, 1)
     ),
     url(../img/hero-small-ideo.jpg);
   background-size: cover;
@@ -19,7 +19,7 @@
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
+        rgba($color-primary-light, 1)
       ),
       url(../img/hero-small-ideo.jpg);
   }

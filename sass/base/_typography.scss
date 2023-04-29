@@ -6,9 +6,9 @@ body {
 }
 
 .heading-primary {
-  color: $color-white;
+  color: $color-text;
   text-transform: uppercase;
-  margin-bottom: 6rem;
+  //margin-bottom: 6rem;
 
   /* to avoid the shake effect after the transition */
   backface-visibility: hidden;
@@ -45,6 +45,19 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
+
+    @include respond(phone) {
+      letter-spacing: 0.85rem;
+    }
+
+    animation: moveInRight 1s ease-out;
+  }
+  &--middle {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    margin-top: -1rem;
 
     @include respond(phone) {
       letter-spacing: 0.85rem;
