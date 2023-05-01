@@ -56,7 +56,8 @@ Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -69,7 +70,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 3rem;
+  overflow-x: hidden; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -866,8 +868,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#67e8f9, #3328b4);
-  z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+  z-index: 1000; }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
