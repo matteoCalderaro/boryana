@@ -34,6 +34,13 @@
   &--white {
     background-color: $color-white;
     color: $color-text;
+    position: absolute !important;
+    bottom: 150px !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 25rem;
+    text-align: center;
 
     &::after {
       background-color: $color-white;

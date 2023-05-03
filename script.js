@@ -33,3 +33,38 @@ allLinks.forEach((link) => {
     });
   }
 });
+
+///////////////////////////////////////////////////////////
+// Sticky navigation
+const header = document.querySelector('.header__text-box');
+
+const obs = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    console.log(ent);
+    const button = document.querySelector('.navigation__button');
+    const background = document.querySelector('.navigation__background');
+    const nav = document.querySelector('.navigation__nav');
+    if (ent.isIntersecting === false) {
+      button.style.display = 'block';
+      background.style.display = 'block';
+      nav.style.display = 'block';
+    }
+    if (ent.isIntersecting === true) {
+      button.style.display = 'none';
+      background.style.display = 'none';
+      nav.style.display = 'none';
+    }
+  },
+  {
+    // In the viewport (null means viewport)
+    root: null,
+    threshold: 0,
+    rootMargin: '-150px',
+  }
+);
+obs.observe(header);
+
+// navigation__button;
+// navigation__background;
+// navigation__nav;
